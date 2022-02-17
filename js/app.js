@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const addToList = function(titleHeading, authorHeading, categoryHeading) {
     const unorderedList = document.querySelector('#reading-list');
     const listItem = document.createElement('li');
+    listItem.classList.add('flex-item');
     listItem.appendChild(titleHeading);
     listItem.appendChild(authorHeading);
     listItem.appendChild(categoryHeading);
